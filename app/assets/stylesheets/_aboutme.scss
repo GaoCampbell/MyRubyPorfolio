@@ -1,0 +1,48 @@
+.about-me{
+  background-color: $backgroundColor;
+  padding: $heroPadding;
+  display: flex;
+  padding-top: 180px;
+  padding-bottom: 90px;
+
+  .img-text{
+    flex-basis: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: space-between;
+    
+    .img{
+      border-radius: 15px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex-basis: 40%;
+      background-position: center;
+      background-image: url('meflag.jpg');
+    }
+      img{
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .text{
+      flex-basis: 50%;
+      h1{
+        margin-bottom: 15px;
+        color: $sencondaryColor;
+      }
+      h2{
+        margin-bottom: 25px;
+        text-align: justify;
+        
+      }
+      p{
+        text-align: justify;
+        color: $fontcolor1;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}

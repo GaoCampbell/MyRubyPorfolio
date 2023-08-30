@@ -1,0 +1,181 @@
+.Hero{
+  display: flex;
+  padding:$heroPadding;
+  width: 100%;
+  height: 105vh;
+  padding-top: 10vh;
+  background-color: #fff;
+  justify-content: space-between;
+
+
+  .left{
+    display: flex;
+    // justify-content: center;
+    align-items: flex-start;
+    max-width:444.16px;
+    flex-direction: column;
+    color: $fontcolor2;
+    margin: auto 0;
+    
+
+    h1{
+      font-size: 50px;
+      font-family: $fontFamily4!important;
+      letter-spacing: 0px;
+      margin-bottom: 20px;
+      display: inline-flex;
+      width: 100%;
+      letter-spacing: 5.75px;
+      min-width: 444.16px;
+      
+    }
+    .title-container{
+      min-width: 444.16px;
+      div{
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px 0 25px 0px;
+      .Title{
+        font-weight: 500;
+        font-size: 24px;
+        font-family: $fontFamily!important;
+        margin-right: 15px;
+        color: $sencondaryColor;
+        font-weight: 600;
+      }
+      ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        li{
+          height: 25px;
+          width: 25px;
+          
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+      .bio{
+        text-align: justify;
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+        font-family: $fontFamily!important;
+        color: $fontcolor3;
+        margin-bottom: 25px;
+      }
+      .cv{
+        text-decoration: none;
+        background: $sencondaryColor;
+        color: #fff;
+        padding: 1px 5px;
+        border-radius: 8px;
+        font-family: $fontFamily;
+        font-weight: 500;
+        width: 110px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(20, 126, 251, 0.075) 0px 1px 1px, rgba(20, 126, 251, 0.075) 0px 2px 2px, rgba(20, 126, 251, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        transition:  all 0.6s ease;
+        animation: bounce 0.8s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        @keyframes bounce {
+          from{ transform: translate3d(0,0,0);}
+          to { transform: translate3d(0,8px,0);}
+        }
+
+        &:hover{
+          background-color:rgb(0, 96, 206);
+
+        }
+      }
+      
+    }
+    
+  }
+  .right{
+    display: flex;
+    flex-basis: 45%;
+    padding: 0px 0px;
+    justify-content: center;
+    height: 95%;
+    // align-items: center;
+    
+    
+    .img{
+      margin: auto;
+      height: 70%;
+      width: 75%;
+      border: 3.5px solid $sencondaryColor;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url('me.jpg');
+      border-radius: 60% 40% 60% 50%/35% 60% 40% 30%;
+      animation: morph 8s ease-in-out infinite;
+      -webkit-animation: morph 8s ease-in-out infinite;
+      background-position: top;
+      @keyframes morph {
+    0% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+  }
+    }
+
+  }
+  .links{
+    position: absolute;
+    right: 2.5%;
+    top: 0;
+    height: 100vh;
+    width: 70px;
+    padding-top: 10vh;
+    
+    ul{
+      position: sticky;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 65px;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      li{
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+
+        scale: 1;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all 0.4s ease;
+        &:hover{
+          cursor: pointer;
+          scale: 1.5;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+  
+          
+        }
+      }
+    }
+  }
+}

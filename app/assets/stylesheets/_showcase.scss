@@ -1,0 +1,150 @@
+.showcase{
+    padding: $heroPadding;
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: $backgroundColor;
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    .title{
+      font-family: $fontFamily;
+      margin-bottom: 50px;
+      h1{
+        color: $sencondaryColor;
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 18px!important;
+        color: $fontcolor1;
+        font-weight: 500;
+      }
+    }
+    .card{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      flex-basis: 100%;
+      padding: 15px;
+      gap: 5%;
+      margin-bottom: 60px;
+      background-color: #f3f3f3;
+      transition: all 0.4s ease-in-out;
+      
+      .img{
+        flex-basis: 55%;
+        height: 100%;  
+        border-radius: 20px; 
+        background-image: url('SocialMediaClone.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      }
+      .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 45%;
+        flex-direction: column;
+        border-radius: 20px;
+        .pro-title{
+          font-size: 24px;
+          color: $sencondaryColor;
+          margin-bottom: 25px;
+          
+          }
+          p{
+            text-align: justify;
+            color: $fontcolor1;
+            font-weight: 500;
+            font-size: 18px;
+            width: 90%;
+          }
+          .tech{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            list-style: none;
+            gap: 20px;
+            margin: 25px 0;
+            li{
+              font-family: $fontFamily;
+              color: $fontcolor1;
+              box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+              height: 35px;
+              display: inline-flex;
+              border-radius: 4px;
+              width: auto;
+              padding: 5px;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              img{
+                height: 100%;
+                width: 100%;
+              }
+            }
+          }
+            .links{
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              list-style: none;
+              gap: 20px;
+              width: 100%;
+              justify-content: space-around;
+              li{
+              a{
+                text-decoration: none;
+                font-family: $fontFamily;
+                font-size: 16px;
+                color: $fontcolor1;
+                margin-right: 10px;
+                font-weight: 500;
+                i{
+                  margin-left: 5px;
+                }
+              }
+            }
+            }
+      }
+      &:hover{
+      scale: 1.02;
+
+    }
+    }
+    .card2{
+      .img{
+        order: 2;
+      }
+      .right{
+        order: 1;
+      }
+    }
+    .card3{
+      .img{
+        order: 1;
+      }
+      .right{
+        order: 2;
+      }
+    }
+    .card4{
+      .img{
+        order: 2;
+      }
+      .right{
+        order: 1;
+      }
+    }
+  }
+}

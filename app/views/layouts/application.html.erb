@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="icon" href=<%=asset_path('logo32.png')%>>
+  <title>G. Campbell</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Personal Porfolio Website | Created by Gao in Taiwan">
+    <script async rel="preconnect" src="https://kit.fontawesome.com/7288d38684.js" crossorigin="anonymous"></script>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= render 'layouts/navbar'%>
+    <%= yield %>
+    <%= render 'layouts/footer'%>
+  </body>
+</html>
