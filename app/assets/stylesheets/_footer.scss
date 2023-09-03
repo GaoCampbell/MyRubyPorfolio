@@ -1,13 +1,47 @@
 footer{
   width: 100%;
-  height: 10vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color:#fff;
+  flex-direction: column;
+  padding: $heroPadding;
   p{
     font-family: $fontFamily;
     color: f$fontcolor2;
     font-size: $fontsize;
+    margin-bottom: 20px;
+  }
+  .links{
+    margin: 20px 0;
+    width: 100%;
+    ul{
+      width: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      justify-content:center;
+      gap: 150px;
+      
+      
+      li{
+        height: 32px;
+        width: 32px;
+        border-radius:50% ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all 0.4s ease;
+        &:hover{
+          cursor: pointer;
+          scale: 1.5;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
   }
 }
