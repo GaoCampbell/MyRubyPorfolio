@@ -1,0 +1,31 @@
+
+  @media (max-width:480px) {
+    nav{
+    .center-links {
+      display: none;
+    }
+    .right-links {
+       gap: 0;
+       margin-left: 0;
+      .loc{
+        display: none;
+      }
+      .fa-solid{
+        display: flex;
+      }
+    }
+    }
+  }
+
+  // @media (min-width:770px) {
+  //   nav{
+  //   .center-links{
+  //    ul{
+      
+  //    }
+  //   }
+  //   .right-links {
+  //     display: none;
+  //   }
+  //   }
+  // }

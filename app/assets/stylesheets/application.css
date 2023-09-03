@@ -67,9 +67,8 @@ nav .center-links {
 nav .center-links ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 100px;
 }
 nav .center-links ul li a {
   text-decoration: none;
@@ -97,15 +96,19 @@ nav .right-links p:hover {
   color: #147efb;
   cursor: pointer;
 }
+nav .right-links .fa-solid {
+  display: none;
+}
 
 .Hero {
   display: flex;
   padding: 0px 13%;
   width: 100%;
-  height: 105vh;
   padding-top: 10vh;
   background-color: #fff;
   justify-content: space-between;
+  padding-bottom: 90px;
+  height: 105vh;
 }
 .Hero .left {
   display: flex;
@@ -348,7 +351,7 @@ nav .right-links p:hover {
   background-color: #f5f5f5;
   padding: 0px 13%;
   display: flex;
-  padding-top: 180px;
+  padding-top: 90px;
   padding-bottom: 90px;
 }
 .about-me .img-text {
@@ -603,7 +606,7 @@ nav .right-links p:hover {
 
 footer {
   width: 100%;
-  height: 8vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -613,4 +616,179 @@ footer p {
   font-family: "Poppins";
   color: f #2d2e32;
   font-size: 17px;
+}
+
+@media (max-width: 480px) {
+  nav .center-links {
+    display: none;
+  }
+  nav .right-links {
+    gap: 0;
+    margin-left: 0;
+  }
+  nav .right-links .loc {
+    display: none;
+  }
+  nav .right-links .fa-solid {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .Hero {
+    flex-direction: column;
+    padding: 0px 4%;
+    padding-top: 20vh;
+    height: 136vh;
+    padding-bottom: 90px;
+  }
+  .Hero .left {
+    order: 2;
+    max-width: unset;
+    width: 100%;
+    margin: unset;
+  }
+  .Hero .left h1 {
+    min-width: 0;
+    text-align: center;
+  }
+  .Hero .left .title-container {
+    min-width: unset;
+    width: 100%;
+  }
+  .Hero .left .title-container div {
+    justify-content: center;
+  }
+  .Hero .left .title-container div .Title {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .Hero .left .title-container div ul {
+    display: none;
+  }
+  .Hero .left .title-container div ul li {
+    height: 20px;
+    width: 20px;
+  }
+  .Hero .left .bio {
+    font-size: 16px !important;
+  }
+  .Hero .left .cv {
+    width: 50% !important;
+    margin: 0 auto;
+  }
+  .Hero .right .img {
+    height: 100%;
+    width: 80%;
+  }
+  .Hero .links {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .tech-stack {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .about-me {
+    padding: 0px 4%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    height: 145vh;
+  }
+  .about-me .img-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .about-me .img-text .img {
+    height: 100%;
+    width: 100%;
+  }
+  .about-me .img-text .text {
+    padding-top: 25px;
+  }
+  .about-me .img-text .text h1 {
+    font-size: 22px;
+  }
+  .about-me .img-text .text h2 {
+    font-size: 22px;
+  }
+  .about-me .img-text .text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .skills {
+    padding: 0px 4%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .skills .title h1 {
+    font-size: 22px;
+  }
+  .skills .skills-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  .skills .skills-container .row1 {
+    width: 95%;
+    flex-basis: unset;
+  }
+  .skills .skills-container .row1 h1 {
+    font-size: 22px;
+  }
+  .skills .skills-container .row1 ul li {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .showcase {
+    padding: 0px 4%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .showcase .container .title h1 {
+    font-size: 22px;
+  }
+  .showcase .container .title p {
+    font-size: 16px !important;
+  }
+  .showcase .container .card {
+    flex-direction: column;
+    flex-basis: unset;
+    height: 95vh;
+    gap: 2%;
+  }
+  .showcase .container .card .img {
+    flex-basis: unset;
+    width: 100%;
+  }
+  .showcase .container .card .right {
+    padding-top: 10px;
+  }
+  .showcase .container .card .right .pro-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .showcase .container .card .right p {
+    font-size: 16px;
+  }
+  .showcase .container .card .right ul li {
+    font-size: 16px;
+  }
+  .showcase .container .card2 .img, .showcase .container .card3 .img, .showcase .container .card4 .img {
+    order: unset;
+  }
+  .showcase .container .card2 .right, .showcase .container .card3 .right, .showcase .container .card4 .right {
+    order: unset;
+  }
+}
+@media (max-width: 480px) {
+  footer p {
+    text-align: center;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=application.css.map */
