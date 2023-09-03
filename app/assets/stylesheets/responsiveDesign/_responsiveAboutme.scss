@@ -1,0 +1,31 @@
+@media (max-width:480px){
+.about-me{
+  padding: $heromobilepadding;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  height: 145vh;
+  
+  .img-text{
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    .img{
+      height: 100%;
+      width: 100%;
+      
+    }
+    .text{
+      padding-top: 25px;
+      h1{
+        font-size: 22px;
+      }
+      h2{
+        font-size: 22px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+}
+}

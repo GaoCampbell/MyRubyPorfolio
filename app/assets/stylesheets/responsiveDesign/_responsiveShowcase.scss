@@ -1,0 +1,53 @@
+@media (max-width:480px){
+  .showcase{
+    padding: $heromobilepadding;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    .container{
+    .title{
+      h1{
+        font-size: 22px;
+      }
+      p{
+        font-size: 16px!important;
+      }
+    }
+    .card{
+      flex-direction: column;
+      flex-basis: unset;
+      height: 95vh;
+      gap: 2%;
+    .img{
+      flex-basis: unset;
+      width: 100%;
+    }
+    .right{
+      padding-top: 10px;
+      .pro-title{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 16px;
+      }
+      ul{
+        li{
+          font-size: 16px;
+        }
+      }
+    }
+    }
+    .card2, .card3, .card4 {
+      .img{
+        order:unset;
+      }
+      .right{
+        order:unset;
+      }
+    }
+    
+  }
+  }
+}

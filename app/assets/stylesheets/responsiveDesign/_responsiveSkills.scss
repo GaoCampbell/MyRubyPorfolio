@@ -1,0 +1,30 @@
+@media (max-width:480px){
+.skills{
+  padding: $heromobilepadding;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .title{
+    h1{
+      font-size: 22px;
+    }
+  }
+
+  .skills-container{
+    flex-direction: column;
+    align-items:center;
+    gap: 60px;
+    .row1{
+      width: 95%;
+      flex-basis: unset;
+      h1{
+        font-size: 22px;
+      }
+      ul{
+        li{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+}
