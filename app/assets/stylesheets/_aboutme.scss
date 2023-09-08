@@ -4,10 +4,11 @@
   display: flex;
   padding-top: 90px;
   padding-bottom: 90px;
+  height: auto;
 
   .img-text{
     flex-basis: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: row;
     gap: 10%;
@@ -34,8 +35,7 @@
       }
       h2{
         margin-bottom: 25px;
-        text-align: justify;
-        
+        text-align: justify;  
       }
       p{
         text-align: justify;
