@@ -28,6 +28,7 @@
     align-items: flex-start;
     height: auto;
     gap: 15px;
+    
     .row1{
       flex-basis: 25%;
       display: flex;
@@ -45,7 +46,7 @@
         text-align: center;
         justify-content: center;
         flex-direction: column;
-        width: 85%;
+        width: 95%;
         gap: 15px;
         font-size: 18px;
         li{
@@ -54,10 +55,11 @@
           justify-content: center;
           align-items: center;
           background-color: #fff;
-          padding: 10px 5px 10px 5px;
+          padding: 10px 15px 10px 15px;
           height: auto;
           border-radius: 30px;
           transition: all 0.4s ease-in-out;
+          
           img{
             width: 35px;
             height: 35px;

@@ -1,8 +1,8 @@
 .tech-stack{
   width: 100%;
   height: auto;
-  position: absolute;
-  bottom: -55px;
+  position: relative;
+  bottom: 40px;
   
   div{
     width: 100%;
@@ -18,8 +18,7 @@
       color: $fontcolor2;
       font-weight: 500;
       margin-right: 15px;
-    }
-    
+    } 
     ul{
       list-style: none;
       display: flex;
@@ -46,15 +45,13 @@
           
           display: none;
           font-size: 0px;
-          transition-delay: 1s;
-          
+          transition-delay: 1s;     
         }
         &:hover{        
           span{
             display: block;
             font-size: 10px;
           }
-          
         }
       }
       .img1{
