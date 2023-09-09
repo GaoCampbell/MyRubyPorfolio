@@ -3,13 +3,11 @@
   padding: $heromobilepadding;
   padding-top: 90px;
   padding-bottom: 90px;
-  height: 110vh;
   .img-text{
     flex-direction: column;
     align-items: center;
     gap: 0;
     .img{
-      height: 100%;
       width: 100%;
     }
     .text{
@@ -34,7 +32,7 @@
   .img-text{
      flex-direction: column;
      .img{
-       height: 380px;
+       height: 350px;
        flex-basis: unset;
        margin-bottom: 50px;
      }
