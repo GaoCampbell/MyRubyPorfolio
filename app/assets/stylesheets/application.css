@@ -89,13 +89,71 @@ nav .right-links img {
   width: 25px;
 }
 nav .right-links p {
-  transition: all 0.4s ease;
+  transition: all 0.5s linear;
 }
 nav .right-links p:hover {
   color: #147efb;
   cursor: pointer;
 }
-nav .right-links .fa-solid {
+nav .right-links .fa-bars {
+  display: none;
+}
+nav .right-links .fa-bars:hover {
+  cursor: pointer;
+}
+nav .mobile-nav {
+  position: absolute;
+  right: 0;
+  height: auto;
+  width: 75vw;
+  top: 0;
+  transition: width 0.3s linear;
+  background: rgba(20, 126, 251, 0.21);
+  border-radius: 16px;
+  border: 0px solid rgba(10, 126, 251, 0);
+  box-shadow: 0 0px 0px rgba(20, 126, 251, 0);
+  border-top-right-radius: 0px !important;
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+}
+nav .mobile-nav ul {
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 25px;
+}
+nav .mobile-nav ul .X {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+nav .mobile-nav ul .X:hover {
+  cursor: pointer;
+}
+nav .mobile-nav ul a {
+  text-decoration: none;
+  color: #2d2e32;
+}
+nav .mobile-nav ul a li {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+nav .mobile-nav ul a li i {
+  padding-right: 15px;
+}
+nav .mobile-nav ul a li:hover {
+  cursor: pointer;
+}
+nav .mobile-nav ul hr {
+  border: none;
+  height: 0.5px;
+  background-color: #a3a3a3;
+}
+nav .hidden {
   display: none;
 }
 
@@ -660,7 +718,7 @@ footer .links ul li img {
   nav .right-links .loc {
     display: none;
   }
-  nav .right-links .fa-solid {
+  nav .right-links .fa-bars {
     display: flex;
   }
 }
@@ -675,7 +733,7 @@ footer .links ul li img {
   nav .right-links .loc {
     display: none;
   }
-  nav .right-links .fa-solid {
+  nav .right-links .fa-bars {
     display: flex;
   }
 }
