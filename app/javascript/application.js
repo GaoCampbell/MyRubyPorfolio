@@ -6,15 +6,18 @@ const nav = document.querySelector('.mobile-nav');
 const showNav = document.querySelectorAll('.fa-bars');
 const closeNav = document.querySelector('.X');
 const li = document.querySelectorAll('.li');
+const bars = document.querySelector('.fa-bars');
 
 const closeModal = function closeMenu() {
   nav.classList.add('hidden');
-   nav.style.width = "0vw";
+  nav.style.width = "0vw";
+  bars.style.display = "unset";
 }
 
 const openModal = function openMenu() {
-   nav.style.width = "50vw";
+  nav.style.width = "50vw";
   nav.classList.remove('hidden');
+  bars.style.display = "none";
 }
 
 for (let i = 0; i < li.length; i++) {
