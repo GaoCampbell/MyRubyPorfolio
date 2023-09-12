@@ -75,31 +75,32 @@ nav{
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
   }
   .mobile-nav{
-      position: absolute;
+      display: none;
+      position: fixed;
       right: 0;
-      height: auto;
-      width: 75vw;
+      height: 101vh;
+      width: 0;
       top: 0;
       transition: width 0.3s linear;
-      background: rgba(20, 126, 251, 0.21);
-      border-radius: 16px;
-      border: 0px solid rgb(10, 126, 251, 0);
-      box-shadow: 0 0px 0px rgba(20, 126, 251, 0);
-      border-top-right-radius: 0px!important;
-      backdrop-filter: blur(5.2px);
-      -webkit-backdrop-filter: blur(5.2px);
+      background: rgb(53 53 53 / 18%);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.4px);
+      -webkit-backdrop-filter: blur(3.4px);
       
       ul{
         font-weight: 600;
         list-style: none;
         display: flex;
         flex-direction: column;
-        gap: 17px;
         padding: 25px;
+        gap: 70px;
+        height: 100%;
+
         .X{
           display: flex;
           justify-content: flex-end;
-          margin-bottom: 40px;
+          padding-top: 10px;
+          margin-right: 13px;
           &:hover{
             cursor: pointer;
           }
@@ -129,8 +130,4 @@ nav{
       }
       
     }
-    .hidden{
-        display:none
-      }
-    
 }

@@ -14,6 +14,9 @@
         display: flex;
       }
     }
+    .mobile-nav{
+      display: unset;
+    }
     }
   }
 
@@ -31,6 +34,9 @@
       .fa-bars{
         display: flex;
       }
+    }
+    .mobile-nav{
+      display: unset;
     }
     }
   }

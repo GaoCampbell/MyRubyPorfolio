@@ -102,32 +102,32 @@ nav .right-links .fa-bars:hover {
   cursor: pointer;
 }
 nav .mobile-nav {
-  position: absolute;
+  display: none;
+  position: fixed;
   right: 0;
-  height: auto;
-  width: 75vw;
+  height: 101vh;
+  width: 0;
   top: 0;
   transition: width 0.3s linear;
-  background: rgba(20, 126, 251, 0.21);
-  border-radius: 16px;
-  border: 0px solid rgba(10, 126, 251, 0);
-  box-shadow: 0 0px 0px rgba(20, 126, 251, 0);
-  border-top-right-radius: 0px !important;
-  backdrop-filter: blur(5.2px);
-  -webkit-backdrop-filter: blur(5.2px);
+  background: rgba(53, 53, 53, 0.18);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
 }
 nav .mobile-nav ul {
   font-weight: 600;
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 17px;
   padding: 25px;
+  gap: 70px;
+  height: 100%;
 }
 nav .mobile-nav ul .X {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 40px;
+  padding-top: 10px;
+  margin-right: 13px;
 }
 nav .mobile-nav ul .X:hover {
   cursor: pointer;
@@ -152,9 +152,6 @@ nav .mobile-nav ul hr {
   border: none;
   height: 0.5px;
   background-color: #a3a3a3;
-}
-nav .hidden {
-  display: none;
 }
 
 @keyframes morph {
@@ -721,6 +718,9 @@ footer .links ul li img {
   nav .right-links .fa-bars {
     display: flex;
   }
+  nav .mobile-nav {
+    display: unset;
+  }
 }
 @media (max-width: 820px) {
   nav .center-links {
@@ -735,6 +735,9 @@ footer .links ul li img {
   }
   nav .right-links .fa-bars {
     display: flex;
+  }
+  nav .mobile-nav {
+    display: unset;
   }
 }
 @media (max-width: 480px) {
