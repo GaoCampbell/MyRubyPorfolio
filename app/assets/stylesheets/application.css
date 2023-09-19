@@ -607,7 +607,7 @@ nav .mobile-nav ul hr {
   height: 35px;
   display: inline-flex;
   border-radius: 4px;
-  width: auto;
+  max-width: 100px;
   padding: 5px;
   align-items: center;
   justify-content: center;
@@ -615,7 +615,6 @@ nav .mobile-nav ul hr {
 }
 .showcase .container .card .right .tech li img {
   height: 100%;
-  width: 100%;
 }
 .showcase .container .card .right .links {
   display: flex;
