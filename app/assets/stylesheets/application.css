@@ -76,7 +76,7 @@ nav .center-links ul li a {
 }
 nav .center-links ul li a:hover {
   cursor: pointer;
-  color: #147efb;
+  color: #0c6cdf;
 }
 nav .right-links {
   display: flex;
@@ -92,7 +92,7 @@ nav .right-links p {
   transition: all 0.5s linear;
 }
 nav .right-links p:hover {
-  color: #147efb;
+  color: #0c6cdf;
   cursor: pointer;
 }
 nav .right-links .fa-bars {
@@ -218,7 +218,7 @@ nav .mobile-nav ul hr {
   font-size: 24px;
   font-family: "Poppins" !important;
   margin-right: 15px;
-  color: #147efb;
+  color: #0c6cdf;
   font-weight: 600;
 }
 .Hero .left .title-container div ul {
@@ -246,7 +246,7 @@ nav .mobile-nav ul hr {
 }
 .Hero .left .title-container .cv {
   text-decoration: none;
-  background: #147efb;
+  background: #0c6cdf;
   color: #fff;
   padding: 1px 5px;
   border-radius: 8px;
@@ -277,7 +277,7 @@ nav .mobile-nav ul hr {
   margin: auto;
   height: 100%;
   width: 70%;
-  border: 3.5px solid #147efb;
+  border: 3.5px solid #0c6cdf;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("me.webp");
@@ -354,7 +354,7 @@ nav .mobile-nav ul hr {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  border: 4px solid transparent;
+  border: 2px solid transparent;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.5s ease;
   text-align: center;
@@ -424,7 +424,7 @@ nav .mobile-nav ul hr {
   background-size: cover;
   flex-basis: 40%;
   background-position: center;
-  background-image: url("meflag.jpg");
+  background-image: url("meflag.webp");
 }
 .about-me .img-text .lazy-background.visible {
   background-image: url("meflag.webp");
@@ -438,7 +438,7 @@ nav .mobile-nav ul hr {
 }
 .about-me .img-text .text h1 {
   margin-bottom: 15px;
-  color: #147efb;
+  color: #0c6cdf;
 }
 .about-me .img-text .text h2 {
   margin-bottom: 25px;
@@ -468,7 +468,7 @@ nav .mobile-nav ul hr {
 .skills .title h1 {
   margin-bottom: 15px;
   font-size: 25px;
-  color: #147efb;
+  color: #0c6cdf;
 }
 .skills .title p {
   text-align: justify;
@@ -492,7 +492,7 @@ nav .mobile-nav ul hr {
   color: #626262;
 }
 .skills .skills-container .row1 h1 {
-  color: #147efb;
+  color: #0c6cdf;
   margin-bottom: 20px;
 }
 .skills .skills-container .row1 ul {
@@ -539,7 +539,7 @@ nav .mobile-nav ul hr {
   margin-bottom: 50px;
 }
 .showcase .container .title h1 {
-  color: #147efb;
+  color: #0c6cdf;
   margin-bottom: 15px;
 }
 .showcase .container .title p {
@@ -580,7 +580,7 @@ nav .mobile-nav ul hr {
 }
 .showcase .container .card .right .pro-title {
   font-size: 24px;
-  color: #147efb;
+  color: #0c6cdf;
   margin-bottom: 25px;
 }
 .showcase .container .card .right p {
@@ -598,6 +598,7 @@ nav .mobile-nav ul hr {
   list-style: none;
   gap: 20px;
   margin: 25px 0;
+  flex-wrap: wrap;
 }
 .showcase .container .card .right .tech li {
   font-family: "Poppins";
