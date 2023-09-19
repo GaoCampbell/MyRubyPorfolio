@@ -7,7 +7,14 @@
       <p class="Title">|</p>
       <p class="Title">IMBA</p>
       <ul>
-          <li><img src=<%= asset_path('code.png')%> alt="coding"></li>
+          <li>
+            <picture>
+              <source type="image/webp" srcset=<%= asset_path('code.webp')%>>
+              <source type="image/jpeg" srcset=<%= asset_path('code.png')%>>
+              <img class="lazyload" alt="Coding" data-src=<%= asset_path('code.png')%>>
+            </picture>
+            
+          </li>
         </ul>
       </div>
       <p class="bio">I'm Highly passionate about designing, coding and launching products, which is why I chose this career path.</p>
@@ -16,7 +23,9 @@
 
 </div>
 <div class="right">
-  <div class="img"></div>
+  <div class="img">
+    
+  </div>
   
 </div>
 <div class="links">

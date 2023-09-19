@@ -14,13 +14,17 @@
     gap: 10%;
     justify-content: space-between;
     
-    .img{
+    .lazy-background{
       border-radius: 15px;
       background-repeat: no-repeat;
       background-size: cover;
       flex-basis: 40%;
       background-position: center;
       background-image: url('meflag.jpg');
+      
+    }
+    .lazy-background.visible{
+      background-image: url('meflag.webp');
     }
       img{
       width: 100%;
