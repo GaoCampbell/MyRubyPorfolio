@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0;
-    .img{
+    .lazy-background{
       width: 100%;
     }
     .text{
@@ -31,7 +31,7 @@
 .about-me{
   .img-text{
      flex-direction: column;
-     .img{
+     .lazy-background{
        height: 350px;
        flex-basis: unset;
        margin-bottom: 50px;

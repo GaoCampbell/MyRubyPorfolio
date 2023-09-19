@@ -30,4 +30,3 @@ for (let x = 0; x < showNav.length; x++) {
 
 closeNav.addEventListener('click',closeModal);
 
-

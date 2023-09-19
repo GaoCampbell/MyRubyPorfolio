@@ -90,7 +90,7 @@ nav{
       ul{
         font-weight: 600;
         list-style: none;
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
         padding: 25px;
         gap: 70px;
@@ -99,29 +99,35 @@ nav{
         .X{
           display: flex;
           justify-content: flex-end;
-          padding-top: 10px;
-          margin-right: 13px;
-          &:hover{
+          align-items: flex-start;
+          padding-top: 10px;          
+          i{
+            &:hover{
             cursor: pointer;
           }
+          }
         } 
-        a{
-          text-decoration: none;
-          color: $fontcolor2;
+          
         li{
+          
           display: inline-flex;
           align-items: center;
           height: 100%;
-          width: 100%;
-            i{
-              
-              padding-right: 15px;
-            } 
-          &:hover{
+          flex-basis: 100%;    
+          a{
+            text-decoration: none;
+            color: $fontcolor2;
+            display: inline-flex;
+            align-items: center;
+            &:hover{
             cursor: pointer;
-          }       
+          }
+          p{
+            margin: 0px 13px;
+          }
+          }     
         }
-      }
+      
         hr{
           border: none;
           height: 0.5px;
