@@ -82,21 +82,23 @@ nav{
       width: 0;
       top: 0;
       transition: width 0.3s linear;
-      background: rgb(53 53 53 / 18%);
+      background: rgb(53 53 53 / 65%);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(3.4px);
       -webkit-backdrop-filter: blur(3.4px);
       
       ul{
+        color: white;
         font-weight: 600;
         list-style: none;
         display: inline-flex;
         flex-direction: column;
         padding: 25px;
-        gap: 70px;
-        height: 100%;
+        gap: 7vh;
+        
 
         .X{
+          
           display: flex;
           justify-content: flex-end;
           align-items: flex-start;
@@ -116,7 +118,7 @@ nav{
           flex-basis: 100%;    
           a{
             text-decoration: none;
-            color: $fontcolor2;
+            color: white;
             display: inline-flex;
             align-items: center;
             &:hover{
